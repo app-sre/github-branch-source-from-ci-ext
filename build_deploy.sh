@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE_NAME="quay.io/app-sre/github-mirror"
+IMAGE_NAME="quay.io/app-sre/github-branch-source-from-ci-ext"
 IMAGE_TAG=$(git rev-parse --short=7 HEAD)
 
 docker build -t "${IMAGE_NAME}:latest" .
