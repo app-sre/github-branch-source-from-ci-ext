@@ -1,5 +1,3 @@
-// a comment
-// another comment
 pipeline {
     agent {
         node {
