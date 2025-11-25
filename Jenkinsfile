@@ -26,10 +26,6 @@ pipeline {
             }
             steps {
                 wrap([$class: 'VaultBuildWrapper',
-                    configuration: [
-                        vaultUrl: 'https://vault.ci.ext.devshift.net',
-                        vaultCredentialId: 'vault-creds-ci-ext',
-                    ],
                     vaultSecrets: [
                         [
                             path: 'app-sre/quay/app-sre-push',
